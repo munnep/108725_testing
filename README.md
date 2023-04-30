@@ -4,10 +4,12 @@ testing submodules and the viewing of resources
 
 ```
 .
+.
 ├── LICENSE
 ├── README.md
 ├── main.tf
 └── module
+    ├── main.tf
     ├── submodule1
     │   └── main.tf
     └── submodule2
@@ -15,6 +17,7 @@ testing submodules and the viewing of resources
 ```        
 
 1 resource in root
+4 resources in the module
 4 resources in submodule1
 4 resources in submodule2
 
