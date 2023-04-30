@@ -13,3 +13,8 @@ testing submodules and the viewing of resources
     └── submodule2
         └── main.tf
 ```        
+
+1 resource in root
+4 resources in submodule1
+4 resources in submodule2
+
