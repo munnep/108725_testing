@@ -7,7 +7,3 @@ module "submodule1" {
 module "submodule2" {
     source = "./modules/submodule2"
 }
-
-module "submodule3" {
-    source = "./modules/submodule1"
-}
