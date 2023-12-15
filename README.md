@@ -8,7 +8,7 @@ testing submodules and the viewing of resources
 ├── LICENSE
 ├── README.md
 ├── main.tf
-└── module
+└── modules
     ├── main.tf
     ├── submodule1
     │   └── main.tf
