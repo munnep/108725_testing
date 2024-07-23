@@ -1,7 +1,7 @@
 resource "null_resource" "test1" {
 
   provisioner "local-exec" {
-    command = "cat hello.sh"
+    command = "cat ${path.module}/hello.sh"
   }
 }
 
@@ -9,13 +9,13 @@ resource "null_resource" "test1" {
 resource "null_resource" "test2" {
 
   provisioner "local-exec" {
-    command = "ls -al"
+    command = "ls -al ${path.module}"
   }
 }
 
 resource "null_resource" "test3" {
 
   provisioner "local-exec" {
-    command = "./hello.sh"
+    command = "${path.module}/hello.sh"
   }
 }
