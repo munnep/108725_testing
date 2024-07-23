@@ -1,9 +1,21 @@
-resource "null_resource" "test1" {}
+resource "null_resource" "test1" {
 
-module "submodule1" {
-    source = "./modules/submodule1"
+  provisioner "local-exec" {
+    command = "cat hello.sh"
+  }
 }
 
-module "submodule2" {
-    source = "./modules/submodule2"
+
+resource "null_resource" "test2" {
+
+  provisioner "local-exec" {
+    command = "ls -al"
+  }
+}
+
+resource "null_resource" "test3" {
+
+  provisioner "local-exec" {
+    command = "./hello.sh"
+  }
 }
